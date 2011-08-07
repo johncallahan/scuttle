@@ -5,7 +5,7 @@ class TemplateService {
     function &getInstance() {
         static $instance;
         if (!isset($instance))
-            $instance =& new TemplateService();
+            $instance = new TemplateService();
         return $instance;
     }
   
@@ -16,7 +16,7 @@ class TemplateService {
     function loadTemplate($template, $vars = NULL) {
         if (substr($template, -4) != '.php')
             $template .= '.php';
-        $tpl =& new Template($this->basedir .'/'. $template, $vars, $this);
+        $tpl = new Template($this->basedir .'/'. $template, $vars, $this);
         $tpl->parse();
         return $tpl;
     }

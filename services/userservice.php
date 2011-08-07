@@ -5,7 +5,7 @@ class UserService {
     function &getInstance(&$db) {
         static $instance;
         if (!isset($instance))
-            $instance =& new UserService($db);
+            $instance = new UserService($db);
         return $instance;
     }
 

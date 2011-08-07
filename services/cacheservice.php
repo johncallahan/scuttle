@@ -7,7 +7,7 @@ class CacheService {
         static $instance;
         
         if (!isset($instance))
-            $instance =& new CacheService();
+            $instance = new CacheService();
 
         return $instance;
     }

@@ -6,7 +6,7 @@ class TagService {
     function &getInstance(&$db) {
         static $instance;
         if (!isset($instance))
-            $instance =& new TagService($db);
+            $instance = new TagService($db);
         return $instance;
     }
 

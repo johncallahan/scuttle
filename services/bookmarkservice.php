@@ -5,7 +5,7 @@ class BookmarkService {
     function & getInstance(& $db) {
         static $instance;
         if (!isset ($instance))
-            $instance = & new BookmarkService($db);
+            $instance = new BookmarkService($db);
         return $instance;
     }
 
